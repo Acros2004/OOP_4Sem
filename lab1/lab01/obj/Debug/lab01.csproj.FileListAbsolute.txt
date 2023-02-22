@@ -1,0 +1,11 @@
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.csproj.AssemblyReference.cache
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.csproj.SuggestedBindingRedirects.cache
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.Form1.resources
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.Properties.Resources.resources
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.csproj.GenerateResource.cache
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.csproj.CoreCompileInputs.cache
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\bin\Debug\lab01.exe.config
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\bin\Debug\lab01.exe
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\bin\Debug\lab01.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.exe
+C:\Users\nikit\OneDrive\Рабочий стол\univer\2cource2sem\OOP2sem\lab01\lab01\obj\Debug\lab01.pdb

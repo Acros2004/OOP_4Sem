@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account>
+    <histories>
+      <History />
+    </histories>
+    <Type>open</Type>
+    <OpeningDate>2023-02-13T04:36:38.7466914+03:00</OpeningDate>
+    <Sms>true</Sms>
+    <owner>
+      <Birthdate>2023-02-13T04:36:38.7466914+03:00</Birthdate>
+      <Name>Nikita</Name>
+      <Passport>1234567A123PB1</Passport>
+    </owner>
+    <num>123</num>
+    <Balance>403097</Balance>
+  </Account>
+  <Account>
+    <histories />
+    <Type>closed</Type>
+    <OpeningDate>2023-02-03T12:28:39</OpeningDate>
+    <Sms>true</Sms>
+    <owner>
+      <Birthdate>2023-02-03T12:28:39</Birthdate>
+      <Name>Maksim</Name>
+      <Passport>5496327A356PB6</Passport>
+    </owner>
+    <num>8562</num>
+    <Balance>300</Balance>
+  </Account>
+  <Account>
+    <histories />
+    <Type>open</Type>
+    <OpeningDate>2023-02-18T13:01:02.5733364+03:00</OpeningDate>
+    <Sms>true</Sms>
+    <owner>
+      <Birthdate>2023-02-18T13:01:02.5733364+03:00</Birthdate>
+      <Name>Andrey</Name>
+      <Passport>1234567A123PB1</Passport>
+    </owner>
+    <num>123</num>
+    <Balance>273438</Balance>
+  </Account>
+</ArrayOfAccount>

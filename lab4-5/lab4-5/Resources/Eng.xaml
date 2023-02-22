@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="История">History</v:String>
+    <v:String x:Key="Страна">Country</v:String>
+    <v:String x:Key="Цена">Cost</v:String>
+    <v:String x:Key="Открыть">Open</v:String>
+    <v:String x:Key="Сохранить">Save</v:String>
+    <v:String x:Key="Рус">Рус</v:String>
+    <v:String x:Key="Анг">Eng</v:String>
+    <v:String x:Key="Свет">Light theme</v:String>
+    <v:String x:Key="Тёмн">Dark theme</v:String>
+    <v:String x:Key="плюс">Add</v:String>
+    <v:String x:Key="минус">Remove</v:String>
+    <v:String x:Key="фото">Add photo</v:String>
+    <v:String x:Key="СортЦена">Sort by price</v:String>
+    <v:String x:Key="СортПроизводитель">Sort by manufacturer</v:String>
+</ResourceDictionary>

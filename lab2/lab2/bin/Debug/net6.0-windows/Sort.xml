@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account>
+    <histories />
+    <Type>open</Type>
+    <OpeningDate>2023-02-13T04:36:38.7466914+03:00</OpeningDate>
+    <Sms>true</Sms>
+    <owner>
+      <Birthdate>2023-02-13T04:36:38.7466914+03:00</Birthdate>
+      <Name>Nikita</Name>
+      <Passport>1234567A123PB1</Passport>
+    </owner>
+    <num>123</num>
+    <Balance>500</Balance>
+  </Account>
+  <Account>
+    <histories>
+      <History />
+      <History />
+    </histories>
+    <Type>closed</Type>
+    <OpeningDate>2023-02-03T12:28:39</OpeningDate>
+    <Sms>true</Sms>
+    <owner>
+      <Birthdate>2023-02-03T12:28:39</Birthdate>
+      <Name>Maksim</Name>
+      <Passport>5496327A356PB6</Passport>
+    </owner>
+    <num>8562</num>
+    <Balance>330</Balance>
+  </Account>
+</ArrayOfAccount>assport>
+    </owner>
+    <num>1111</num>
+    <Balance>12987</Balance>
+  </Account>
+  <Account>
+    <histories>
+      <History />
+      <History />
+    </histories>
+    <Type>closed</Type>
+    <OpeningDate>2023-02-13T04:45:30.3748873+03:00</OpeningDate>
+    <Sms>false</Sms>
+    <owner>
+      <Birthdate>2023-02-13T04:45:30.3748873+03:00</Birthdate>
+      <Name>adadd</Name>
+      <Passport>6543211A123PB1</Passport>
+    </owner>
+    <num>1111</num>
+    <Balance>79245</Balance>
+  </Account>
+</ArrayOfAccount>
