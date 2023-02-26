@@ -15,4 +15,7 @@
     <v:String x:Key="фото">Add photo</v:String>
     <v:String x:Key="СортЦена">Sort by price</v:String>
     <v:String x:Key="СортПроизводитель">Sort by manufacturer</v:String>
+    <v:String x:Key="Назад">Undo</v:String>
+    <v:String x:Key="Вперёд">Redo</v:String>
+    <v:String x:Key="Отключить">Disable</v:String>
 </ResourceDictionary>

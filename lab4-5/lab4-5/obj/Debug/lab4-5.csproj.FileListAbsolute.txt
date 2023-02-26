@@ -27,3 +27,7 @@ C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\lab4-5
 C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\Resources\Rus.baml
 C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\Resources\Eng.baml
 C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\Resources\Dark.baml
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\UserControl1.g.cs
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\obj\Debug\UserControl1.baml
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\bin\Debug\WpfControlLibrary1.dll
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\bin\Debug\WpfControlLibrary1.pdb

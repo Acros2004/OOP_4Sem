@@ -7,9 +7,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Policy;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace lab4_5
@@ -19,7 +21,62 @@ namespace lab4_5
         Car selectedCar;
         IFileService fileService;
         IDialogService dialogService;
-       
+        public NHist histForBack = new NHist();
+        public NHist histForForward = new NHist();
+        public Saf SaveData()
+        {
+            return new Saf(ref searchedCars);
+        }
+        public void RestoreDataBack(Saf data)
+        {
+            histForForward.Form.Push(SaveData());
+            SearchedCars = data.list;
+        }
+        public void RestoreDataForward(Saf data)
+        {
+            histForBack.Form.Push(SaveData());
+            SearchedCars = data.list;
+        }
+        private RelayCommand undo;
+        private RelayCommand redo;
+        public RelayCommand Undo
+        {
+            get
+            {
+                return undo ??
+                  (undo = new RelayCommand(obj =>
+                  {
+                      if (histForBack.Form.Count > 0)
+                      {
+                          RestoreDataBack(histForBack.Form.Pop());
+                      }
+                      else
+                      {
+                          MessageBox.Show("Стек пуст,назад нельзя");
+                      }
+                      OnPropertyChanged("SearchedCars");
+                  }));
+            }
+        }
+        public RelayCommand Redo
+        {
+            get
+            {
+                return redo ??
+                  (redo = new RelayCommand(obj =>
+                  {
+                      if (histForForward.Form.Count > 0)
+                      {
+                          RestoreDataForward(histForForward.Form.Pop());
+                      }
+                      else
+                      {
+                          MessageBox.Show("Стек пуст,вперёд нельзя");
+                      }
+                      OnPropertyChanged("SearchedCars");
+                  }));
+            }
+        }
         public ObservableCollection<Car> Cars { get; set; }
         private RelayCommand addCommand;
         public RelayCommand AddCommand
@@ -29,7 +86,8 @@ namespace lab4_5
                 return addCommand ??
                   (addCommand = new RelayCommand(obj =>
                   {
-                      Car car = new Car();
+                      histForBack.Form.Push(SaveData());
+                      var car = new Car();
                       Cars.Insert(0, car);
                       SelectedCar = car;
                       SearchedCars = Cars;
@@ -44,6 +102,7 @@ namespace lab4_5
             {
                 return removeCommand ?? (removeCommand = new RelayCommand(obj =>
                 {
+                    histForBack.Form.Push(SaveData());
                     Cars.Remove(SelectedCar);
                     SearchedCars = Cars;
                     OnPropertyChanged("SearchedCars");
@@ -80,17 +139,7 @@ namespace lab4_5
                 }));
             }
         }
-        //private static RoutedCommand _undoCommand;
-        //private static RoutedCommand _redoCommand;
-
-        //public static RoutedCommand UndoCommand
-        //{
-        //    get { return _undoCommand; }
-        //}
-        //public static RoutedCommand RedoCommand
-        //{
-        //    get { return _redoCommand; }
-        //}
+       
         
 
         private RelayCommand openCommand;
@@ -120,8 +169,17 @@ namespace lab4_5
                 }));
             }
         }
-        
-        public ObservableCollection<Car> SearchedCars { get; set; }
+        private ObservableCollection<Car> searchedCars;
+        public ObservableCollection<Car> SearchedCars {
+            get
+            {
+                return searchedCars;
+            }
+            set
+            {
+                searchedCars = value;
+            }
+        }
 
         public int filterOfCost;
         public int FilterOfCost
@@ -200,6 +258,8 @@ namespace lab4_5
 
         public ApplicationViewModel(IDialogService dialogService, IFileService fileService)
         {
+            searchedCars = new ObservableCollection<Car> { new Car() };
+            histForBack.Form.Push(SaveData());
             this.dialogService = dialogService;
             this.fileService = fileService;
 

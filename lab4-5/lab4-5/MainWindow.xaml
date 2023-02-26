@@ -4,9 +4,51 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab4_5"
+        xmlns:uc="clr-namespace:WpfControlLibrary1;assembly=WpfControlLibrary1"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" d:DataContext="{d:DesignInstance Type=local:ApplicationViewModel}"
-        Title="AutoCar" MinHeight="550" MinWidth="700" MaxHeight="1200" MaxWidth="1200" Style="{DynamicResource Wind}" Icon="C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\files\favicon.ico">
+        Title="AutoCar" MinHeight="625" MinWidth="700" MaxHeight="1200" MaxWidth="1200" Style="{DynamicResource Wind}" Icon="C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\lab4-5\files\favicon.ico">
+    <Window.Resources>
+        <ControlTemplate TargetType="Button" x:Key="btTemplate">
+            <Border CornerRadius="25"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="{TemplateBinding Background}"
+                    Height="{TemplateBinding Height}"
+                    Width="{TemplateBinding Width}" >
+                <ContentControl Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Content="{TemplateBinding Content}" />
+            </Border>
+        </ControlTemplate>
+        <Style TargetType="Button" >
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsPressed" Value="True" />
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="Foreground" Value="Red" />
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+                <EventTrigger RoutedEvent="Click">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0.3" To="100" AutoReverse="True" />
+                                <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0.3" To="40" AutoReverse="True" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <DataTrigger Binding="{Binding ElementName=Disable, Path=IsChecked}"
+                        Value="True">
+                    <Setter Property="IsEnabled" Value="False"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition MinWidth="100" MaxWidth="300" />
@@ -103,7 +145,11 @@
                 <TextBox HorizontalAlignment="Left" Margin="0,27,0,0" TextWrapping="Wrap" Text="{Binding History, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190" Height="193"/>
             </Grid>
         </StackPanel>
-        <Button Content="{DynamicResource плюс}" Command="{Binding AddCommand}"  HorizontalAlignment="Left" Margin="25,362,0,10" Grid.Row="1" VerticalAlignment="Bottom" Grid.RowSpan="2" Width="84"/>
-        <Button Content="{DynamicResource минус}" Command="{Binding RemoveCommand}"  HorizontalAlignment="Left" Margin="160,362,0,10" Grid.Row="1" VerticalAlignment="Bottom" Grid.RowSpan="2" Width="84" Height="32"/>
+        <Button Content="{DynamicResource плюс}" Template="{StaticResource btTemplate}" Command="{Binding AddCommand}" Height="32"  HorizontalAlignment="Left" Margin="25,362,0,10" Grid.Row="1" VerticalAlignment="Bottom" Grid.RowSpan="2" Width="84"/>
+        <Button Content="{DynamicResource минус}"  Template="{StaticResource btTemplate}" Command="{Binding RemoveCommand}"   HorizontalAlignment="Left" Margin="130,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Grid.RowSpan="2" Width="84" Height="32"/>
+        <CheckBox x:Name="Disable"  Content="{DynamicResource Отключить}" HorizontalAlignment="Left" Margin="214,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="81"/>
+        <uc:UserControl1 Margin="224,465,0,-15" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Grid.RowSpan="2" VerticalAlignment="Bottom"/>
+        <Button Content="{DynamicResource Назад}" Template="{StaticResource btTemplate}" Command="{Binding Undo}"  Height="32"  HorizontalAlignment="Left" Margin="18,508,0,10" VerticalAlignment="Bottom" Width="84" Grid.Column="1" Grid.RowSpan="2" Grid.Row="1"/>
+        <Button Content="{DynamicResource Вперёд}" Template="{StaticResource btTemplate}" Command="{Binding Redo}"  Height="32"  HorizontalAlignment="Left" Margin="116,508,0,10" VerticalAlignment="Bottom" Width="84" Grid.Column="1" Grid.RowSpan="2" Grid.Row="1"/>
     </Grid>
 </Window>
