@@ -1,0 +1,8 @@
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\bin\Debug\Model.exe.config
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\bin\Debug\Model.exe
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\bin\Debug\Model.pdb
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\obj\Debug\Model.csproj.SuggestedBindingRedirects.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\obj\Debug\Model.exe
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab9LastTask\Model\Model\obj\Debug\Model.pdb

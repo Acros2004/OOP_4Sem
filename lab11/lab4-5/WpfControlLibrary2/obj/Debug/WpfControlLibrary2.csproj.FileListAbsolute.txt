@@ -1,0 +1,13 @@
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\bin\Debug\WpfControlLibrary2.dll
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\bin\Debug\WpfControlLibrary2.pdb
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.csproj.AssemblyReference.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\UserControl1.g.cs
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2_MarkupCompile.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2_MarkupCompile.lref
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\UserControl1.baml
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.g.resources
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.Properties.Resources.resources
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.csproj.GenerateResource.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.dll
+C:\Users\nikit\Desktop\univer\2cource2sem\OOP2sem\lab4-5\WpfControlLibrary2\obj\Debug\WpfControlLibrary2.pdb

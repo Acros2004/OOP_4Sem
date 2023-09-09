@@ -1,0 +1,52 @@
+﻿<Window x:Class="lab9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFE5E4FB">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="197*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <DataGrid Background="Transparent" AutoGenerateColumns="False" x:Name="authorGrid" Grid.ColumnSpan="2" Margin="5,0,5,46" Grid.RowSpan="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding id}" Header="Id" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding name}" Header="Name" Width="*"/>
+                    <DataGridTextColumn Binding="{Binding bookID}" Header="BookID" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel Orientation="Vertical" Margin="10,0,10,0">
+                <TextBlock Text="name" Margin="0 0 0 0"/>
+                <TextBox x:Name="TextBox_Name" Width="153" Margin="-220 0 10 10"/>
+                <TextBlock Text="Id" Margin="0 0 0 0"/>
+                <TextBox x:Name="TextBox_Id" Width="153" Margin="-220 0 10 10"/>
+                <ComboBox x:Name="Script" Width="120" Margin="-230 10 10 10"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel HorizontalAlignment="Center"  Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="2" Width="764" >
+            <Button x:Name="updateButton" Content="Обновить" Click="updateButton_Click" Width="79" />
+            <Button x:Name="deleteButton" Content="Удалить" Click="deleteButton_Click" Width="79" />
+            <Button x:Name="addButton" Content="Добавить" Click="addButton_Click" Width="79"/>
+            <Button x:Name="addButtonBook" Content="Доб. книгу" Click="addButtonBook_Click" Width="79"/>
+            <Button x:Name="queryButton" Content="Запрос" Click="queryButton_Click" Width="79"/>
+            <Button x:Name="updateItemButton" Content="Обновить запись" Click="updateItemButton_Click" Width="79"/>
+        </StackPanel>
+    </Grid>
+</Window>
